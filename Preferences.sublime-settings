@@ -126,6 +126,8 @@
     "hot_exit": true,
     "ignored_packages":
     [
+        "Vintage",
+        "yxl-vintage",
         "Color Highlighter",
         "ConvertToUTF8",
         "Git",
