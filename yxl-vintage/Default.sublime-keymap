@@ -1,0 +1,25 @@
+[
+    { "keys": ["ctrl+h"], "command": "left_delete" }, // masked, default is replace
+    { "keys": ["ctrl+m"], "command": "insert", "args": {"characters": "\n"}},
+    { "keys": ["ctrl+m"], "command": "confirm",
+        "context": [{"key": "setting.is_widget", "operator": "equal", "operand": true}]},
+
+    // C-j/k
+    { "keys": ["ctrl+j"], "command": "move", "args": {"by": "lines", "forward": true},
+        "context": [{"key": "setting.is_widget", "operator": "equal", "operand": true}] },
+    { "keys": ["ctrl+k"], "command": "move", "args": {"by": "lines", "forward": false},
+        "context": [{"key": "setting.is_widget", "operator": "equal", "operand": true}] },
+    { "keys": ["ctrl+j"], "command": "move", "args": {"by": "lines", "forward": true},
+        "context": [{"key": "auto_complete_visible", "operator": "equal", "operand": true}] },
+    { "keys": ["ctrl+k"], "command": "move", "args": {"by": "lines", "forward": false},
+        "context": [{"key": "auto_complete_visible", "operator": "equal", "operand": true}] },
+    // C-n/p
+    { "keys": ["ctrl+n"], "command": "move", "args": {"by": "lines", "forward": true},
+        "context": [{"key": "setting.is_widget", "operator": "equal", "operand": true}] },
+    { "keys": ["ctrl+p"], "command": "move", "args": {"by": "lines", "forward": false},
+        "context": [{"key": "setting.is_widget", "operator": "equal", "operand": true}] },
+    { "keys": ["ctrl+n"], "command": "move", "args": {"by": "lines", "forward": true},
+        "context": [{"key": "auto_complete_visible", "operator": "equal", "operand": true}] },
+    { "keys": ["ctrl+p"], "command": "move", "args": {"by": "lines", "forward": false},
+        "context": [{"key": "auto_complete_visible", "operator": "equal", "operand": true}] },
+]

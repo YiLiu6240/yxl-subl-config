@@ -1,0 +1,16 @@
+[
+	{"caption" : "-"},
+	{
+		"id"      : "yxl105_aligntab_1",
+		"caption" : "Algntab: Latex Table",
+		"command" : "align_tab",
+		"args"    : {"user_input" : "\\s&|%/llrrrrrrrrrrrrrrrrrrrrrrrrr"}
+	},
+	// align: space with a "#", not two
+	{
+		"id"      : "yxl105_aligntab_2",
+		"caption" : "Aligntab: # Table",
+		"command" : "align_tab",
+		"args"    : {"user_input" : "\\s#(?!#)"}
+	}
+]

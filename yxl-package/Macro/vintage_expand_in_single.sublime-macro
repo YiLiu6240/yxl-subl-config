@@ -1,0 +1,14 @@
+[
+    {
+        "args": null,
+        "command": "enter_visual_mode"
+    },
+    {"command": "set_motion", "args": {
+        "motion": "vi_expand_to_quotes",
+        "motion_args": {"character": "'"}}
+    },
+    {
+        "args": null,
+        "command": "enter_insert_mode"
+    }
+]

@@ -1,0 +1,22 @@
+[
+   {"caption" : "-"},
+    {
+      "id": "aligntab",
+      "caption": "Aligntab",
+      "children": [
+          {
+            "caption" : "- - -"
+          },
+          {
+          "caption" : "Latex table: All & space: left first, right rest",
+          "command" : "align_tab",
+          "args"    : {"user_input" : "\\s&|%/llrrrrrrrrrrrrrrrrrrrrrrrrr"}
+          },
+          {
+          "caption" : "All # with space",
+          "command" : "align_tab",
+          "args"    : {"user_input" : "\\s#"}
+          },
+      ]
+    }
+]

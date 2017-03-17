@@ -1,0 +1,11 @@
+[
+    { "caption": ":q close", "command": "close"},
+    { "caption": ":qa quit all", "command": "close_window"},
+    { "caption": ":sp split",
+        "command": "create_pane",
+        "args": {"direction": "down", "give_focus": true}},
+    { "caption": ":vsp vertical split",
+        "command": "create_pane",
+        "args": {"direction": "right", "give_focus": true}},
+    { "caption": ":tabnew new tab", "command": "new file"},
+]

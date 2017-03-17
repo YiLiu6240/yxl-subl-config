@@ -1,0 +1,13 @@
+[
+
+    {"command": "set_mark"},
+
+    {"command": "move_to", "args": {"to": "hardbol"}},
+
+    {"command": "left_delete"},
+
+    {"command": "swap_with_mark"},
+
+    {"command": "clear_bookmarks", "args": {"name": "mark"}}
+
+]

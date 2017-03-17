@@ -1,0 +1,17 @@
+[
+	// step 1
+	{ "command": "set_action", "args": {
+		"action": "enter_insert_mode",
+		"description": "Change",
+		"action_args": {"insert_command": "vi_delete"}},
+	},
+	// step 2
+	{ "command": "set_motion", "args": {
+		"motion": "vi_expand_to_brackets",
+		"motion_args": {"character": "["}},
+	},
+	// step 3
+	{ "command": "insert_snippet",
+		"args": {"contents": " "},
+	},
+]

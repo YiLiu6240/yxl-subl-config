@@ -1,0 +1,12 @@
+[
+	{ "command": "exit_insert_mode",
+		"context":
+		[
+			{ "key": "setting.command_mode", "operand": false },
+			{ "key": "setting.is_widget", "operand": false }
+		]
+		},
+	{ "command": "enter_visual_mode",
+		"context": [{"key": "setting.command_mode"}]
+	}
+]

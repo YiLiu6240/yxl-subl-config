@@ -1,0 +1,11 @@
+* Short-term
+- packages
+  - [ ] R
+  - [ ] git
+- features
+  - [ ] bib/label completion in latex
+
+* Long-term
+- bring back heavier features
+  - [ ] terminal
+  - [ ]

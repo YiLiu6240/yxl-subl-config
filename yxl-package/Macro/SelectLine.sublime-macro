@@ -1,0 +1,15 @@
+[
+	{ "command": "move_to",
+		"args": {
+			"to": "hardbol",
+			"extend": false,
+		},
+	},
+	{ "command": "move_to",
+		"args":
+		{
+			"to": "hardeol",
+			"extend": true,
+		},
+	}
+]

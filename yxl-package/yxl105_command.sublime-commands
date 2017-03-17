@@ -1,0 +1,392 @@
+[
+
+// test purpose
+    { "caption": "md test",
+        "command": "insert_snippet",
+        "args": {"contents": "${SELECTION/^(\\s*)(.*)/$1- [ ] $2/}"},
+    },
+
+// new
+    { "caption": "Save Prompt",
+        "command": "create_save_prompt",
+    },
+    { "caption": "Sublime Console",
+        "command": "show_panel",
+        "args": {"panel": "console", "toggle": true}
+    },
+    { "caption": "Convert Indent to Tabs",
+        "command": "expand_tabs",
+        "args": {"set_translate_tabs": true},
+    },
+    { "caption": "Convert Indent to Spaces",
+        "command": "toggle_setting",
+        "args": {"setting": "translate_tabs_to_spaces"},
+    },
+
+// open files
+    { "caption": "Open Containing Folder…",
+        "command": "open_dir",
+        "args": {"dir": "$file_path", "file": "$file_name"}
+    },
+    { "caption": "open-include",
+        "command": "open_include",
+    },
+    { "caption": "Open Terminal Here…",
+        "command": "open_terminal"
+    },
+    { "caption": "Open ConEmu here",
+        "command": "open_conemu_here",
+    },
+    { "caption": "Open Wiki: index.md",
+        "command": "open_wiki_index",
+    },
+    { "caption": "Open current file in new window",
+        "command": "open_current_file_in_new_window",
+    },
+    { "caption": "Open_file: yxl105_command",
+        "command": "open_file", "args":
+        {"file": "${packages}/yxl_package/yxl105_command.sublime-commands"},
+    },
+    { "caption": "Open_file: Vim Cheatsheet",
+        "command": "open_file", "args":
+        {"file": "${packages}/yxl105 - files/vi-vim-cheat-sheet.gif"},
+    },
+
+// sub-frequently used but missing commands
+    { "command": "transpose", "caption": "Text: Transpose" },
+    { "command": "clone_file", "caption": "File: Clone"},
+    { "command": "focus_neighboring_group", "caption": "Focus: next group"},
+    { "command": "focus_neighboring_group", "args": {"forward": false}, "caption": "Focus: prev group"},
+    { "command": "open_file_settings", "caption": "Syntax Specific – User"},
+    { "command": "show_panel", "args": {"panel": "replace", "reverse": false}, "caption": "Replace…"},
+
+// Latextools Commands
+    { "caption": "Latex: Ref or Cite",
+        "context":  [{"key": "selector", "operator": "equal", "operand": "text.tex.latex"}],
+        "command": "latex_ref_cite",
+    },
+
+// // Custom Builds
+//  { "caption": "Switch Build: Latex-PDFLatex",
+//      "command": "set_build_system",
+//      "args": { "file":"Packages/User/Build_Systems/LaTeX-pdflatex.sublime-build" }
+//  },
+
+//  { "caption": "Switch Build: Latex-Bibtex",
+//      "command": "set_build_system",
+//      "args": { "file":"Packages/User/Build_Systems/LaTeX-bibtex.sublime-build" }
+//  },
+
+//  { "caption": "Latex: remove aux files",
+//      "command": "delete_temp_files"
+//  },
+
+// Snippets
+    // Sections - # style: R, Python, and others
+    { "caption": "Comment Short Line 1 - #",
+        "command": "insert_snippet",
+        "args": {"contents": "################################"},
+    },
+    { "caption": "Comment Block Title 1 - #",
+        "command": "insert_snippet",
+        "args": {"contents": "################################\n## $0\n################################"},
+    },
+    { "caption": "Comment Block All 1 - #",
+        "command": "insert_snippet",
+        "args": {"contents": "\n################################\n## $0\n################################\n$SELECTION\n####### Section Ends Here ######\n"},
+    },
+    { "caption": "Comment Short End 1 - #",
+        "command": "insert_snippet",
+        "args": {"contents": "####### Section Ends Here ######"},
+    },
+    { "caption": "Comment Long Line 1 - #",
+        "command": "insert_snippet",
+        "args": {"contents": "#######################################################"},
+    },
+    { "caption": "Comment Long End 1 - #",
+        "command": "insert_snippet",
+        "args": {"contents": "################## Section Ends Here ##################"},
+    },
+    // Sections - % style: Latex matlab
+    { "caption": "Comment Short Line 2 - %",
+        "command": "insert_snippet",
+        "args": {"contents": "%%############################%%"},
+    },
+    { "caption": "Comment Short End 2 - %",
+        "command": "insert_snippet",
+        "args": {"contents": "%%##### Section Ends Here ####%%"},
+    },
+    { "caption": "Comment Long Line 2 - %",
+        "command": "insert_snippet",
+        "args": {"contents": "%%###################################################%%"},
+    },
+    { "caption": "Comment Long End 2 - %",
+        "command": "insert_snippet",
+        "args": {"contents": "%%################ Section Ends Here ################%%"},
+    },
+    // Sections - // style: C, java
+    { "caption": "Comment Short Line 3 - /",
+        "command": "insert_snippet",
+        "args": {"contents": "//############################//"},
+    },
+    { "caption": "Comment Short End 3 - /",
+        "command": "insert_snippet",
+        "args": {"contents": "//##### Section Ends Here ####//"},
+    },
+    { "caption": "Comment Long Line 3 - /",
+        "command": "insert_snippet",
+        "args": {"contents": "//###################################################//"},
+    },
+    { "caption": "Comment Long End 3 - /",
+        "command": "insert_snippet",
+        "args": {"contents": "//################ Section Ends Here ################//"},
+    },
+
+// Advancced Layout Panel
+    { "command": "set_layout",
+        "caption": "Layout: usual 1*2",
+        "args": { "cols": [0.0, 0.5, 1.0],
+                 "rows": [0.0, 0.5, 1.0],
+                 "cells": [ [0, 0, 1, 2], [1, 0, 2, 1], [1, 1, 2, 2] ]
+        }
+    },
+    { "command": "set_layout",
+        "caption": "Layout: vertical 1*2",
+        "args": { "cols": [0.0, 0.5, 1.0],
+                 "rows": [0.0, 0.7, 1.0],
+                 "cells": [ [0, 0, 2, 1], [0, 1, 1, 2], [1, 1, 2, 2] ]
+        }
+    },
+    { "command": "set_layout",
+        "caption": "Layout: 2*1 Latex",
+        "args": { "cols": [0.0, 0.7, 1.0],
+                 "rows": [0.0, 0.3, 1.0],
+                 "cells": [ [0, 0, 1, 1], [0, 1, 1, 2], [1, 0, 2, 2] ]
+        }
+    },
+    { "command": "set_layout",
+        "caption": "Layout: Task Panel",
+        "args": { "cols": [0.0, 0.15, 0.78, 1.0 ],
+        "rows": [0.0, 0.5, 1.0 ],
+        "cells": [[1, 0, 2, 1 ], [2, 0, 3, 2 ], [0, 0, 1, 2 ], [1, 1, 2, 2 ] ]
+        }
+    },
+
+// Indent and Braces
+    { "caption": "IndentBraces: {}",
+        "command": "indent_and_braces",
+        "args": {"from_cursor": false}
+    },
+
+    { "caption": "IndentBraces: []",
+        "command": "indent_and_braces",
+        "args": { "opening_brace": "[", "closing_brace": "]", "from_cursor": false },
+    },
+
+    { "caption": "IndentBraces: ()",
+        "command": "indent_and_braces",
+        "args": { "opening_brace": "(", "closing_brace": ")", "from_cursor": false },
+    },
+
+// Mark system
+    // Mark
+        { "caption": "Mark: set mark", "command": "set_mark" },
+        { "caption": "Mark: clear mark", "command": "clear_bookmarks", "args": {"name": "mark"} },
+        { "caption": "Mark: select to mark", "command": "select_to_mark" },
+        { "caption": "Mark: delete to mark", "command": "delete_to_mark" },
+        { "caption": "Mark: swap with mark", "command": "swap_with_mark" },
+        { "caption": "Mark: yank", "command": "yank" },
+
+// Bookmark system
+    { "caption": "Bookmark: jump prev bookmark", "command": "prev_bookmark" },
+    { "caption": "Bookmark: toggle bookmark", "command": "toggle_bookmark" },
+    { "caption": "Bookmark: jump next bookmark", "command": "next_bookmark" },
+    { "caption": "Bookmark: clear bookmark", "command": "clear_bookmarks" },
+    { "caption": "Bookmark: select all bookmarks", "command": "select_all_bookmarks" },
+
+// Toggles
+
+    // Toggle Font sizes - individual files
+        { "caption": "Toggle Font Size: 07.5",
+            "command": "set_setting",
+            "args": {"setting": "font_size", "value": 7.5},
+        },
+        { "caption": "Toggle Font Size: 08",
+            "command": "set_setting",
+            "args": {"setting": "font_size", "value": 08},
+        },
+        { "caption": "Toggle Font Size: 09",
+            "command": "set_setting",
+            "args": {"setting": "font_size", "value": 09},
+        },
+        { "caption": "Toggle Font Size: 10",
+            "command": "set_setting",
+            "args": {"setting": "font_size", "value": 10},
+        },
+        { "caption": "Toggle Font Size: 11",
+            "command": "set_setting",
+            "args": {"setting": "font_size", "value": 11},
+        },
+        { "caption": "Toggle Font Size: 12",
+            "command": "set_setting",
+            "args": {"setting": "font_size", "value": 12},
+        },
+        { "caption": "Toggle Font Size: 14",
+            "command": "set_setting",
+            "args": {"setting": "font_size", "value": 14},
+        },
+        { "caption": "Toggle Font Size: 15",
+            "command": "set_setting",
+            "args": {"setting": "font_size", "value": 15},
+        },
+        { "caption": "Toggle Font Size: 16",
+            "command": "set_setting",
+            "args": {"setting": "font_size", "value": 16},
+        },
+        { "caption": "Toggle Font Size: 20",
+            "command": "set_setting",
+            "args": {"setting": "font_size", "value": 20},
+        },
+    // Toggle line numbers
+        { "caption": "Toggle: Line numbers",
+            "command": "toggle_setting",
+            "args":
+                {
+                    "setting": "line_numbers"
+                }
+        },
+
+    // Toggle auto_indent
+        { "caption": "Toggle: Auto indent",
+            "command": "toggle_setting",
+            "args":
+                {
+                    "setting": "auto_indent"
+                }
+        },
+
+    // Toggle Gutter
+        { "caption": "Toggle: Gutter",
+            "command": "toggle_setting",
+            "args": {"setting": "gutter"}
+        },
+
+    // Toggle Automatch
+        { "caption": "Toggle: Auto match",
+            "command": "toggle_setting",
+            "args": {"setting": "auto_match_enabled"}
+        },
+
+    // Toggle Wrap
+        { "caption": "Toggle Wrap: off",
+            "command": "toggle_setting",
+            "args": {"setting": "word_wrap"},
+        },
+        { "caption": "Toggle Wrap: Auto",
+            "command": "set_setting",
+            "args": {"setting": "wrap_width", "value": 0},
+        },
+        { "caption": "Toggle Wrap: 70 chars",
+            "command": "set_setting",
+            "args": {"setting": "wrap_width", "value": 70},
+        },
+        { "caption": "Toggle Wrap: 78 chars",
+            "command": "set_setting",
+            "args": {"setting": "wrap_width", "value": 78},
+        },
+        { "caption": "Toggle Wrap: 60 chars",
+            "command": "set_setting",
+            "args": {"setting": "wrap_width", "value": 60},
+        },
+        { "caption": "Toggle Wrap: 38 chars",
+            "command": "set_setting",
+            "args": {"setting": "wrap_width", "value": 38},
+        },
+
+    // Toggle Draw_center
+        { "caption": "Toggle: Draw_center: enabled",
+            "command": "set_setting",
+            "args": {"setting": "draw_centered", "value": true},
+        },
+        { "caption": "Toggle: Draw_center: disabled",
+            "command": "set_setting",
+            "args": {"setting": "draw_centered", "value": false},
+        },
+
+    // Toggle white spaces
+        { "caption": "Toggle: whitespace: enabled",
+            "command": "set_setting",
+            "args": {"setting": "draw_white_space", "value": "all"},
+        },
+        { "caption": "Toggle: whitespace: disabled",
+            "command": "set_setting",
+            "args": {"setting": "draw_white_space", "value": "none"},
+        },
+
+    // Toggle indent guide
+        { "caption": "Toggle: Indent Guide: enabled",
+            "command": "set_setting",
+            "args": {"setting": "draw_indent_guides", "value": true},
+        },
+        { "caption": "Toggle: Indent Guide: disabled",
+            "command": "set_setting",
+            "args": {"setting": "draw_indent_guides", "value": false},
+        },
+
+    // Toggle Ruler
+        { "caption": "Ruler: None",
+            "command": "set_setting",
+            "args": {"setting": "rulers", "value": []}
+        },
+        { "caption": "Ruler: 70",
+            "command": "set_setting",
+            "args": {"setting": "rulers", "value": [70]}
+        },
+        { "caption": "Ruler: 78",
+            "command": "set_setting",
+            "args": {"setting": "rulers", "value": [78]}
+        },
+        { "caption": "Ruler: 80",
+            "command": "set_setting",
+            "args": {"setting": "rulers", "value": [80]}
+        },
+
+// Quick Modes
+    { "caption": "Mode: Latex wrap mode",
+        "command": "run_macro_file",
+        "args": {"file": "Packages/yxl_package/Macro_modes/mode_latex.sublime-macro"}
+    },
+
+
+// Language: R
+
+    { "caption": "R: insert custom cat command - level 1",
+        "command": "insert_snippet",
+        "args": {"contents": "cat(\"\\n######\\n $0 \\n######\\n\")"},
+    },
+    { "caption": "R: insert custom cat command with selection - level 1",
+        "command": "insert_snippet",
+        "args": {"contents": "cat(\"\\n######\\n $SELECTION \\n######\\n\")"},
+    },
+
+    { "caption": "R: insert custom cat command - level 2",
+        "command": "insert_snippet",
+        "args": {"contents": "cat(\"\\n------\\n $0 \\n------\\n\")"},
+    },
+    { "caption": "R: insert custom cat command with selection - level 2",
+        "command": "insert_snippet",
+        "args": {"contents": "cat(\"\\n------\\n $SELECTION \\n------\\n\")"},
+    },
+
+// Language: Markdown
+
+    { "caption": "Markdown: insert code block",
+        "command": "insert_snippet",
+        "args": {"contents": "```\n$0\n```\n"},
+    },
+
+// Exit
+    { "caption": "Exit Sublime text",
+        "command": "exit"
+    }
+]

@@ -1,0 +1,5 @@
+[
+	{"caption" : "-"},
+	{ "command": "reveal_in_side_bar", "caption": "Reveal in Side Bar" },
+	{ "command": "open_terminal", "caption": "Open Terminal Here…" }
+]

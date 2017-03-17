@@ -1,0 +1,28 @@
+[
+    { "keys": ["j", "k"], "command": "exit_insert_mode",
+        "context": [{ "key": "setting.command_mode", "operand": false },
+                    { "key": "setting.is_widget", "operand": false } ] },
+
+    // pane movement, dependency: origami
+    { "keys": ["ctrl+h"], "command" : "travel_to_pane",
+        "args": {"direction": "left"},
+        "context": [{"key": "setting.command_mode"}] },
+    { "keys": ["ctrl+j"], "command" : "travel_to_pane",
+        "args": {"direction": "down"},
+        "context": [{"key": "setting.command_mode"}] },
+    { "keys": ["ctrl+k"], "command" : "travel_to_pane",
+        "args": {"direction": "up"},
+        "context": [{"key": "setting.command_mode"}] },
+    { "keys": ["ctrl+l"], "command" : "travel_to_pane",
+        "args": {"direction": "right"},
+        "context": [{"key": "setting.command_mode"}] },
+
+    // tab navigation
+    { "keys": ["g", "t"], "command": "next_view",
+     "context": [{ "key": "setting.command_mode", "operand": true },
+         { "key": "setting.is_widget", "operand": false }] },
+     { "keys": ["g", "T"], "command": "prev_view",
+        "context": [{ "key": "setting.command_mode", "operand": true },
+         { "key": "setting.is_widget", "operand": false }] },
+
+]

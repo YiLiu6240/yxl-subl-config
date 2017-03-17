@@ -1,0 +1,21 @@
+{
+	"font_size": 12,
+	// spacegray theme specific settings
+	"spacegray_tabs_xsmall": false,
+	"spacegray_tabs_small": true,
+	"spacegray_tabs_normal": false,
+	"spacegray_tabs_large": false,
+	"spacegray_tabs_xlarge": false,
+	"spacegray_tabs_auto_width": false,
+	"spacegray_sidebar_font_xsmall": false,
+	"spacegray_sidebar_font_small": false,
+	"spacegray_sidebar_font_normal": false,
+	"spacegray_sidebar_font_large": false,
+	"spacegray_sidebar_font_xlarge": false,
+	"spacegray_sidebar_tree_xsmall": false,
+	"spacegray_sidebar_tree_small": false,
+	"spacegray_sidebar_tree_normal": false,
+	"spacegray_sidebar_tree_large": false,
+	"spacegray_sidebar_tree_xlarge": false,
+	"enable_tab_scrolling": false,
+}

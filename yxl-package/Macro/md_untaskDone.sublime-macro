@@ -1,0 +1,21 @@
+[
+	// step 1
+	{ "command": "move_to",
+		"args": {
+			"to": "hardbol",
+			"extend": false,
+		},
+	},
+	{ "command": "move_to",
+		"args":
+		{
+			"to": "hardeol",
+			"extend": true,
+		},
+	},
+
+	// step 2
+	{ "command": "insert_snippet",
+		"args": {"contents": "${SELECTION/^(\\s*)- \\[x\\] (.*)/$1- [ ] $2/}"},
+	},
+]

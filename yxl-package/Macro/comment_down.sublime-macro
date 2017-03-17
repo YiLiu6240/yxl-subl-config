@@ -1,0 +1,9 @@
+[
+
+    {"command": "move_to", "args": {"to": "hardeol"}},
+
+    {"command": "insert", "args": {"characters": "\n"}},
+
+    {"command": "toggle_comment", "args": { "block": false }}
+
+]

@@ -1,0 +1,7 @@
+[
+    {"command": "set_setting", "args": {"setting": "wrap_width", "value": 78} },
+    {"command": "set_setting", "args": {"setting": "rulers", "value": [80]} },
+    // {"command": "set_setting", "args": {"setting": "draw_white_space", "value": "none"}},
+    // {"command": "set_setting", "args": {"setting": "draw_indent_guides", "value": true}},
+    // {"command": "set_setting", "args": {"setting": "draw_centered", "value": true}}
+]

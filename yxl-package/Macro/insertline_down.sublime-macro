@@ -1,0 +1,9 @@
+[
+    {"command": "set_mark"},
+    {"command": "move_to", "args": {"to": "hardeol"}},
+    {"command": "move", "args": {"by": "lines", "forward": true}},
+    {"command": "move_to", "args": {"to": "hardbol"}},
+    {"command": "insert", "args": {"characters": "\n"}},
+    {"command": "swap_with_mark"},
+    {"command": "clear_bookmarks", "args": {"name": "mark"}}
+]

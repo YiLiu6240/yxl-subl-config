@@ -1,0 +1,9 @@
+[
+	{"command": "set_mark"},
+	// step 1: move cursor down
+	// { "command": "move", "args": {"by": "lines", "forward": true} },
+	// step last: fold
+	{ "command": "unfold" },
+	{"command": "swap_with_mark"},
+	{"command": "clear_bookmarks", "args": {"name": "mark"}}
+]
