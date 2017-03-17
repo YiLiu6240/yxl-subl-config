@@ -1,19 +1,19 @@
 {
-	"bootstrapped": true,
-	"in_process_packages":
-	[
-	],
-	"installed_packages":
-	[
-		"AutoHotkey",
-		"gruvbox",
-		"Hide Menu",
-		"iOpener",
-		"LaTeXTools",
-		"Origami",
-		"Package Control",
-		"R-Box",
-		"SAS Programming",
-		"SendREPL"
-	]
+    "bootstrapped": true,
+    "in_process_packages":
+    [
+    ],
+    "installed_packages":
+    [
+        "AutoHotkey",
+        "gruvbox",
+        "Hide Menu",
+        "iOpener",
+        "LaTeXTools",
+        "Origami",
+        "Package Control",
+        "R-Box",
+        "SAS Programming",
+        "SendREPL"
+    ]
 }
