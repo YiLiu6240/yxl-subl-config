@@ -2,6 +2,12 @@
 
 This time tries to maintain a sane subl config.
 
+Stuff included:
+
+- Vintage
+- latextools
+- R-box
+
 ## Userful resources and stuff:
 
 Sites:
