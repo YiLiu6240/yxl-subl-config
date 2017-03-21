@@ -1,5 +1,7 @@
 {
     "always_show_minimap_viewport": true,
+    "tab_size": 4,
+    "translate_tabs_to_spaces": true,
     "extensions":
     [
         "sublime-commands",

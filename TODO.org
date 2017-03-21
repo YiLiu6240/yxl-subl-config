@@ -1,9 +1,9 @@
 * Short-term
 - packages
-  - [ ] R
+  - [X] R
   - [ ] git
 - features
-  - [ ] bib/label completion in latex
+  - [X] bib/label completion in latex
 
 * Long-term
 - bring back heavier features
