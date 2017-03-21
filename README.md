@@ -1,5 +1,7 @@
 # My sublime text config
 
+This time tries to maintain a sane subl config.
+
 ## Userful resources and stuff:
 
 Sites:
