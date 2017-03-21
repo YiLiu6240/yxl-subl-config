@@ -6,7 +6,7 @@ Stuff included:
 
 - Vintage
 - latextools
-- R-box
+- R-box, SendREPL
 
 ## Userful resources and stuff:
 
