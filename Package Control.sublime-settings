@@ -1,20 +1,22 @@
 {
-    "bootstrapped": true,
-    "in_process_packages":
-    [
-    ],
-    "installed_packages":
-    [
-        "AutoHotkey",
-        "gruvbox",
-        "Hide Menu",
-        "iOpener",
-        "LaTeXTools",
-        "Origami",
-        "Package Control",
-        "R-Box",
-        "SAS Programming",
-        "SendREPL",
-        "Stata Enhanced"
-    ]
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+		"Stata Enhanced"
+	],
+	"installed_packages":
+	[
+		"AutoHotkey",
+		"gruvbox",
+		"Hide Menu",
+		"iOpener",
+		"LaTeX-cwl",
+		"LaTeXTools",
+		"Origami",
+		"Package Control",
+		"R-Box",
+		"SAS Programming",
+		"SendCode",
+		"Stata Enhanced"
+	]
 }
