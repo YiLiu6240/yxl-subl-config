@@ -44,7 +44,7 @@
 	"caret_extra_bottom": 2,
 	"caret_extra_top": 2,
 	"caret_extra_width": 4,
-	"caret_style": "smooth",
+	"caret_style": "solid",
 	"close_windows_when_empty": false,
 	"color_scheme": "Packages/gruvbox/gruvbox (Dark) (Medium).tmTheme",
 	"copy_with_empty_selection": true,
