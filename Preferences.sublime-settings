@@ -124,6 +124,8 @@
 		"directwrite"
 	],
 	"gpu_window_buffer": "auto",
+	"gruvbox_statusbar_xxs": true,
+	"gruvbox_tabs_xxs": true,
 	"gutter": true,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
